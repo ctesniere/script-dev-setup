@@ -8,8 +8,10 @@ sudo apt-get install curl
 
 # nvm + node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
-nvm install 4.2.2
-nvm use 4.2.2
+NODE_VERSION=4.2
+nvm install $NODE_VERSION
+nvm use $NODE_VERSION
+nvm alias default $NODE_VERSION
 
 # Git
 sudo apt-get install git git-gui gitk
